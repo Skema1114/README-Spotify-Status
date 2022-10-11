@@ -1,5 +1,28 @@
-<h1 align="center">Spotify Status (README)</h1>
+
+
+> # UKRAINE NEEDS YOUR HELP NOW!
+>
+> On 24 February 2022, Russian [President Vladimir Putin ordered an invasion of Ukraine by Russian Armed Forces](https://www.bbc.com/news/world-europe-60504334).
+>
+> Your support is urgently needed.
+>
+> - Donate to the volunteers. Here is the volunteer fund helping the Ukrainian army to provide all the necessary equipment:
+>  https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi or https://savelife.in.ua/en/donate/
+> - Triple-check social media sources. Russian disinformation is attempting to coverup and distort the reality in Ukraine.
+> - Help Ukrainian refugees who are fleeing Russian attacks and shellings: https://www.globalcitizen.org/en/content/ways-to-help-ukraine-conflict/
+> -  Put pressure on your political representatives to provide help to Ukraine.
+> -  Believe in the Ukrainian people, they will not surrender, they don't have another Ukraine.
+>
+> THANK YOU!
+
+<br>
+
+<div align="center">
+<h1 >Spotify Status (README)</h1>
 <p align="center">View what you listen at spotify.</p>
+</div>
+
+
 
 <p align="center">
    <a href="https://github.com/sndrjhlncgr/README-Spotify-Status/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/sndrjhlncgr/README-Spotify-Status"></a>
@@ -11,7 +34,7 @@
 ![Image of Sandro Cagara](https://i.ibb.co/Tmjxnhs/README-Spotify-Status-v2.jpg)
 <p align="center">
    <h3>Demo</h3>
-   <img src="https://spotify-status.vercel.app/api/run-spotify-status" alt="s4nx Playing Now" width="500" />
+   <img src="https://readme-spotify-status-rho.vercel.app/api/run-spotify-status.py" alt="s4nx Playing Now" width="500" />
 <p align="center">
 
 Spotify for Developers
@@ -54,18 +77,19 @@ Configure Vercel Application
 * Register on [Vercel](https://vercel.com/)
 
 * Create project linked to your forked respository
+   <br/>
+  **Note**:  set Framework Preset to 'Other'
   
   ![Vercel](https://i.ibb.co/sHhywHD/dasddas.jpg)
 
 * Add Project Name and Environment Variables:
+   Warning: Avoid white spaces!!
   - `SPOTIFY_REFRESH_TOKEN`
   - `SPOTIFY_CLIENT_ID`
-  - `SPOTIFY_SECRET_ID`
+  - `SPOTIFY_SECRET`
   - `SPOTIFY_BAR_COLOR` 
-     - `Hex Color Don't Include #`
-  - `SPOTIFY_ENABLE_DURATION` => `Not Working properly, set to ```False```
-     - `True or False`
-  - 🆕`SPOTIFY_BADGE_COLOR`
+     - `Hex Color`
+  - `SPOTIFY_BADGE_COLOR`
     - `Hex Color`
         
   ![Vercel](https://i.ibb.co/vv5z4yP/Untitled.png)
@@ -76,7 +100,7 @@ Put this in your README.md
 ------
 <h3>Small</h3>
 
-<img src="https://spotify-status.vercel.app/api/run-spotify-status" alt="s4nx Playing Now" width="350" />
+<img src="https://readme-spotify-status-rho.vercel.app/api/run-spotify-status.py" alt="s4nx Playing Now" width="350" />
 
 ``` 
 [<img src="https://{DOMAIN_OF_YOUR_VERCEL_APP}/api/run-spotify-status" alt="Your alt what" width="350" />](LINK_TO_YOUR_ACCOUNT)
@@ -84,7 +108,7 @@ Put this in your README.md
 
 <h3>Medium</h3>
 
-<img src="https://spotify-status.vercel.app/api/run-spotify-status" alt="s4nx Playing Now" width="400" />
+<img src="https://readme-spotify-status-rho.vercel.app/api/run-spotify-status.py" alt="s4nx Playing Now" width="400" />
 
 ``` 
 [<img src="https://{DOMAIN_OF_YOUR_VERCEL_APP}/api/run-spotify-status" alt="Your alt what" width="400" />](LINK_TO_YOUR_ACCOUNT)
@@ -92,7 +116,7 @@ Put this in your README.md
 
 <h3>Large</h3>
 
-<img src="https://spotify-status.vercel.app/api/run-spotify-status" alt="s4nx Playing Now" width="500" />
+<img src="https://readme-spotify-status-rho.vercel.app/api/run-spotify-status.py" alt="s4nx Playing Now" width="500" />
 
 ``` 
 [<img src="https://{DOMAIN_OF_YOUR_VERCEL_APP}/api/run-spotify-status" alt="Your alt what" width="500" />](LINK_TO_YOUR_ACCOUNT)

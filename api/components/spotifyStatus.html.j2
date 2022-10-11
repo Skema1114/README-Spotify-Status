@@ -115,7 +115,7 @@
                     }
                 }
                 .spectrograph {
-                    color: #{{barColor|safe}};
+                    color: {{barColor|safe}};
                 }
                 .spectrograph {
                   bottom: 19px;
@@ -292,19 +292,6 @@
                   color: white;
                   font-size: 20px;
                 }
-                .duration {
-                    font-family: 'Roboto', sans-serif;
-                    position:fixed;
-                    width:30px;
-                    margin-left: -50px;
-                    margin-top: 78px;
-                    background-color: #9c9c9c;
-                    border-radius: 5px;
-                    font-size: 13px;
-                    color:white;
-                    vertical-align: baseline;
-                    padding:2px 0px 2px 6px;
-                }
 
                 .title {
                   margin: 0 auto;
@@ -335,7 +322,7 @@
 
                 {{soundVisualizerCSS|safe}}
             </style>
-             <body onload="startTimer({{duration}});">
+             <body>
                  {% if songName %}
                     <div class="main">
                         <div class="ribbon">
@@ -372,9 +359,6 @@
                             <div class="spectrograph">
                                 {{soundVisualizerBar|safe}}
                             </div>
-                             {% if enableDuration == 'True' %}
-                                    <span id="music-time" class="duration">{{default_duration}}</span>
-                             {% endif %}
                         </div>
                     </div>
                 {% else %}
@@ -382,28 +366,5 @@
                 {% endif %}
              </body>
         </div>
-        <script>
-            function startTimer(duration) {
-              var minute = Math.floor(duration / 60000);
-              var sec = ((duration % 60000) / 1000).toFixed(0);
-              var musicTimer = setInterval(function() {
-                if(minute == -1){
-                    minute = 0
-                    sec = 0
-                    clearInterval(musicTimer)
-                }
-                if(!(parseInt(sec.toString()) > 9)) {
-                    sec = "0" + parseInt(sec.toString())
-                }
-                document.querySelector('#music-time').textContent = minute + ":" + sec;
-                sec--;
-                if (sec == 00) {
-                  minute --;
-                  sec = 60;
-                }
-              }, 1000);
-            }
-
-        </script>
     </foreignObject>
 </svg>
